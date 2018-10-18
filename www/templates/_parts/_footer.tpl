@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="footer__flex-wrap">
 			<div class="footer__copyright">
-				<p>Team02</p>
+				<p>Команда 2</p>
 				<p>Создано c <i class="fas fa-heart"> </i> в
 					<a class="link-bold" href="http://webcademy.ru/">WebCademy.ru</a> в 2018 году</p>
 			</div>

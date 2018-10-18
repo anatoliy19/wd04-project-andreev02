@@ -20,7 +20,7 @@ if ( isset($_POST['login'])) {
 				$_SESSION['logged_user'] = $user;
 				$_SESSION['login'] = "1";
 				$_SESSION['role'] = $user->role;
-				header("Location: " . HOST);
+				header("Location: " . HOST);  //направляем на главную страницу
 				exit();
 			} else {
 				$errors[] = ['title' => 'Пароль введен неверно' ];

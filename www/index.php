@@ -66,17 +66,11 @@ switch ( $uri[0] ) {
 		echo "Blog page";
 		echo "<br>";
 		echo "$uri[1]";
-		// print_r($uri[1]);
+
 		break;
 	
 	default:
 		echo "Main page / 404";
 		break;
 }
-
-echo "<pre>";
-print_r($errors);
-echo "</pre>";
-
-
 ?>

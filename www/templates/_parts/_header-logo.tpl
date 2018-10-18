@@ -4,6 +4,6 @@
 		<p class="header__title mb-0">
 			<a class="header__title" href="#">Digital Lifestyle</a>
 		</p>
-		<p class="header__subtitle mt-0">Сайт IT специалиста</p>
+		<p class="header__subtitle mt-0">Сайт web программиста</p>
 	</div>
 </div>

@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<title>
 		<?php if ( @$title != '' ) {
-			echo "$title - " . SITE_NAME ;
+			echo "$title - " . SITE_NAME;
 		} else {
 			echo SITE_NAME;
 		} ?>

@@ -14,7 +14,7 @@
 					
 					// Пользователь на сайте
 					if ( $_SESSION['role'] != 'admin' ) {
-						// Пользователь на сайте - НЕадмин
+						// Пользователь на сайте - не админ
 						include( ROOT . "templates/_parts/_header-user-profile.tpl");
 					} 
 

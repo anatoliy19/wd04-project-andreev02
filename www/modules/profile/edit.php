@@ -8,27 +8,27 @@ $user = R::load('users', $currentUser->id);
 if ( isset($_POST['profile-update']) ) {
 
 	if ( trim($_POST['email']) == '') {
-		$errors[] = ['title' => 'Введите Email' ];
+		$errors[] = ['title' => 'Введите email' ];
 	}
 
 	if ( trim($_POST['name']) == '') {
-		$errors[] = ['title' => 'Введите Имя' ];
+		$errors[] = ['title' => 'Введите имя' ];
 	}
 
 	if ( trim($_POST['secondname']) == '') {
-		$errors[] = ['title' => 'Введите Фамилию' ];
+		$errors[] = ['title' => 'Введите фамилию' ];
 	}
 
 	if ( empty($errors)	) {
-		$user->name = htmlentities($_POST['name']);
+		$user->name       = htmlentities($_POST['name']);
 		$user->secondname = htmlentities($_POST['secondname']);
-		$user->email = htmlentities($_POST['email']);
-		$user->city = htmlentities($_POST['city']);
-		$user->country = htmlentities($_POST['country']);
+		$user->email      = htmlentities($_POST['email']);
+		$user->city       = htmlentities($_POST['city']);
+		$user->country    = htmlentities($_POST['country']);
 
 		if ( isset($_FILES['avatar']['name']) && $_FILES['avatar']['tmp_name'] != "" ) {
 			
-			// Write file image params in variables
+			// параметры файла картинки сохраняем в переменные
 			$fileName = $_FILES["avatar"]["name"];
 			$fileTmpLoc = $_FILES["avatar"]["tmp_name"];
 			$fileType = $_FILES["avatar"]["type"];
@@ -37,29 +37,29 @@ if ( isset($_POST['profile-update']) ) {
 			$kaboom = explode(".", $fileName);
 			$fileExt = end($kaboom);
 
-			// Check file propertties on different conditions
+			// проверка свойств файла на разные условия
 			list($width, $height) = getimagesize($fileTmpLoc);
 			if ($width < 10 || $height < 10 ) {
 				$errors[] = ['title' => 'Изображение не имеет размеров. Загрузите изображение побольше.' ];
 			}
 
 			if ( $fileSize > 4194304 ) {
-				$errors[] = ['title' => 'Файл изображения не должен быть более 4 Mb' ];
+				$errors[] = ['title' => 'Файл изображения не должен быть больше 4 Mb' ];
 			}
 
 			if ( !preg_match("/\.(gif|jpg|jpeg|png)$/i", $fileName) ) {
-				$errors[]  = [ 'title' => 'Неверный формат файла', 'desc' => '<p>Файл изображения должен быть в формате gif, jpg, jpeg, или png.</p>', ];
+				$errors[]  = [ 'title' => 'Неверный формат файла', 'desc' => '<p>Файл изображения должен быть в формате gif, jpg, jpeg или png.</p>', ];
 			}
 
 			if ( $fileErrorMsg == 1 ) {
 				$errors[] = ['title' => 'При загрузке изображения произошла ошибка. Повторите попытку' ];
 			}
 
-			// Поверям установлен ли аватар у пользователя
+			// Проверим, что аватар у пользователя установлен
 			$avatar = $user->avatar;
 			$avatarFolderLocation = ROOT . 'usercontent/avatar/';
 
-			// Если аватар уже установлен, то есть загружен ранее то удаляем файл аватара
+			// Если аватар уже установлен, то есть загружен ранее, то удаляем файл аватара
 			if ( $avatar != "" ) {
 				$picurl = $avatarFolderLocation . $avatar;
 				// Удаляем аватар
@@ -120,5 +120,4 @@ include ROOT . "templates/_parts/_head.tpl";
 include ROOT . "templates/template.tpl";
 include ROOT . "templates/_parts/_footer.tpl";
 include ROOT . "templates/_parts/_foot.tpl";
-
 ?>

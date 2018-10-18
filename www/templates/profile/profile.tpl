@@ -43,39 +43,39 @@
 					<div class="user-comment-wrap">
 						<div class="comment-wrap">
 							<div class="user-name">
-								<a href="#">Поездка в LA</a>
+								<a href="#">Поездка в Москву</a>
 							</div>
 							<div class="user-date"><i class="far fa-clock"></i>
-								<span class="user-date--dat">05 Мая 2017 года в 15:45</span>
+								<span class="user-date--dat">18 октября 2018 года в 13:32</span>
 							</div>
 						</div>
-						<p class="user-text">Замечательный парк, обязательно отправлюсь туда этим летом.</p>
+						<p class="user-text">В конце октября обещают дожди</p>
 					</div>
 				</div>
 				<div class="user-comment">
 					<div class="user-comment-wrap">
 						<div class="comment-wrap">
 							<div class="user-name">
-								<a href="#">Ноутбук для веб-разработчика</a>
+								<a href="#">Настройка рабочего окружения</a>
 							</div>
 							<div class="user-date"><i class="far fa-clock"></i>
-								<span class="user-date--dat">15 Мая 2017 года в 10:02</span>
+								<span class="user-date--dat">17 октября 2018 года в 10:47</span>
 							</div>
 						</div>
-						<p class="user-text">Замечательный парк, обязательно отправлюсь туда этим летом.</p>
+						<p class="user-text">Настроил Open Server, Sublime, Php</p>
 					</div>
 				</div>
 				<div class="user-comment">
 					<div class="user-comment-wrap">
 						<div class="comment-wrap">
 							<div class="user-name">
-								<a href="#">Настройка Sublime</a>
+								<a href="#">Запуск Open Server</a>
 							</div>
 							<div class="user-date"><i class="far fa-clock"></i>
-								<span class="user-date--dat">12 Мая 2017 года в 20:39</span>
+								<span class="user-date--dat">16 октября 2018 года в 15:32</span>
 							</div>
 						</div>
-						<p class="user-text">Замечательный парк, обязательно отправлюсь туда этим летом.</p>
+						<p class="user-text">Для запуска надо выбирать версию php и базы данных</p>
 					</div>
 				</div>
 			</div>

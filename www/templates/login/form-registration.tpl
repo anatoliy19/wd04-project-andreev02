@@ -10,9 +10,9 @@
 
 	<?php require ROOT . "templates/_parts/_errors.tpl" ?>
 
-	<div class="registration-page-form__row">
+	<!-- <div class="registration-page-form__row">
 		<div class="error hidden">Введите email</div>
-	</div>
+	</div> -->
 
 	<div class="registration-page-form__row error-busy-email-password">
 		<div class="error-with-desc">Данный email уже занят</div>

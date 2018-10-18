@@ -1,5 +1,8 @@
 <?php
 $title = "Регистрация";
+
+
+
 // Если форма отправлена - делаем регистрацию
 if ( isset($_POST['register']) ){
     
@@ -18,15 +21,14 @@ if ( isset($_POST['register']) ){
                 ];
 }
 
-echo "<pre>";
-print_r($errors);
-echo "</pre>";
+// echo "<pre>";
+// print_r($errors);
+// echo "</pre>";
 
 
 if ( empty($errors) ) {
     // регистрируем
-   echo "errors 0";
-
+  
     $user = R::dispense('users');
     $user->email = htmlentities($_POST['email']);
     $user->role = 'user';

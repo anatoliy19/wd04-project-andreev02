@@ -82,7 +82,7 @@ $(document).ready(function() {
 	});
 
 	// ----- check registration form ----- //
-	$('.button--registration').on('click', function(e){
+	$('.button--registration')[0].on('click', function(e){
 		e.preventDefault();
 		input = $('.registration-page-form__row').children('input');
 		mail = $('.registration-page-form__row').children('input[type=email]');
@@ -107,8 +107,8 @@ $(document).ready(function() {
 			});
 		} else {
 			// переходим на страницу профиля
-			// $('#registrationForm').unbind();
-			$('#registrationForm').submit();
+			$('#registrationForm')[0].unbind();
+			$('#registrationForm')[0].submit();
 		}
 	});
 
