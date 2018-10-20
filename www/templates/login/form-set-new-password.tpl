@@ -30,7 +30,7 @@
 		<?php if ( $newPasswordReady == false ): ?>
 			<input type="hidden" name="resetemail" value="<?=$_GET['email']?>">
 			<input type="hidden" name="onetimecode" value="<?=$_GET['code']?>">
-			<input name="set-new-password" type="hidden" value="set-new-password" />
+			<input name="set-new-password" type="submit" value="set-new-password" />
 			<a class="button button--set-new-password">Установить новый пароль</a>
 		<?php endif ?>
 	</div>

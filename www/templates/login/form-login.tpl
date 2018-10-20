@@ -34,7 +34,7 @@
 		</div>
 	</div>
 	<div class="login-page-form__footer">
-		<input name="login" type="hidden" value="login" />
+		<input name="login" type="submit" value="login" />
 		<a class="button button--enter">Войти</a>
 	</div>
 </form>

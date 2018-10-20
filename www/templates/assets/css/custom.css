@@ -1,7 +1,19 @@
-.button{
-	
+/*.button{	
+		padding-top: 15;
+}*/ 
+
+.ml-45{	
+		padding-top: 15;
+}
+
+.button--save{	
 		padding-top: 0;
-} 
+}
+
+.button--registration{	
+		padding-top: 0;
+}
+
 
 .error{
 	display:block;
@@ -30,3 +42,32 @@
 .error-with-desc-bottom p:last-child{
 	  margin-bottom: 0;	   
 }
+
+.header__nav-link{
+
+
+}
+
+
+.header__nav-link--active {
+  border-bottom: none;
+}
+
+.notify--success {
+    background-image: -webkit-linear-gradient(90deg, #08711c 0%, #2cb951 100%);
+    background-image: -ms-linear-gradient(90deg, #08711c 0%, #2cb951 100%);
+    color: #fff;
+}
+
+.notify--update {
+    background-image: -webkit-linear-gradient(90deg, #3d7aa0 0%, #8abbda 100%);
+    background-image: -ms-linear-gradient(90deg, #3d7aa0 0%, #8abbda 100%);
+    color: #fff;
+}
+
+.notify--error {
+    background-image: -webkit-linear-gradient(90deg, #971515 0%, #c93232 100%);
+    background-image: -ms-linear-gradient(90deg, #971515 0%, #c93232 100%);
+    color: #fff;
+}
+

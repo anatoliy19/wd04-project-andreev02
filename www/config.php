@@ -1,7 +1,7 @@
 <?php 
 
 // DB SETTINGS
-define('DB_HOST', 'WD04-project-andreev');
+define('DB_HOST', 'localhost');
 define('DB_NAME', 'WD04-project-andreev');
 define('DB_USER', 'root');
 define('DB_PASS', '');

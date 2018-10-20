@@ -24,7 +24,7 @@
 		</div>
 	</div>
 	<div class="login-page-form__footer">
-		<input name="lost-password" type="hidden" value="lost-password" />
+		<input name="lost-password" type="submit" value="lost-password" />
 		<a class="button button--lost">Восстановить пароль</a>
 	</div>
 </form>
