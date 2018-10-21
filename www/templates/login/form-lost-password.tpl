@@ -1,12 +1,6 @@
 <form id="lostForm" class="login-page-form" method="POST" action="<?=HOST?>lost-password">
 	<div class="login-page-form__header">Забыл пароль</div>
-
-	<?php 
-		// echo "<pre>";
-		// print_r($_POST);
-		// echo "</pre>";
-	 ?>
-
+	
 	<?php require ROOT . "templates/_parts/_errors.tpl" ?>
 	<?php require ROOT . "templates/_parts/_success.tpl" ?>
 
@@ -24,7 +18,6 @@
 		</div>
 	</div>
 	<div class="login-page-form__footer">
-		<input name="lost-password" type="submit" value="lost-password" />
-		<a class="button button--lost">Восстановить пароль</a>
+ <input class="button button--lost" type="submit" name="lost-password" value="Восстановить пароль"></input>
 	</div>
 </form>

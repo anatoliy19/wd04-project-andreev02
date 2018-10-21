@@ -34,7 +34,6 @@
 		</div>
 	</div>
 	<div class="login-page-form__footer">
-		<input name="login" type="submit" value="login" />
-		<a class="button button--enter">Войти</a>
+	<input class="button button--enter" type="submit" name="login" value="Войти"></input>
 	</div>
 </form>
