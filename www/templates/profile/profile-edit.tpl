@@ -11,17 +11,20 @@
             <div class="col-md-4 offset-md-1">
 
                 <div class="form-group">
-                    <label class="label">Имя
+                    <label class="label label_profile-edit">
+                       <p><strong>Имя</strong></p>                        
 						<input class="input" name="name" type="text" placeholder="Введите имя" value="<?=$currentUser->name?>" />
 					</label>
                 </div>
                 <div class="form-group">
-                    <label class="label">Фамилия
+                    <label class="label">
+                        <p><strong>Фамилия</strong></p>
 						<input class="input" name="secondname" type="text" placeholder="Введите фамилию" value="<?=$currentUser->secondname?>"/>
 					</label>
                 </div>
                 <div class="form-group">
-                    <label class="label">Email
+                    <label class="label">
+                        <p><strong>Email</strong></p>
 						<input class="input" name="email" type="text" placeholder="Введите email" value="<?=$currentUser->email?>"/>
 					</label>
                 </div>
@@ -34,17 +37,20 @@
 
             <div class="col-md-4 offset-md-1">
 
-                <input class="inputfile" type="file" name="avatar" id="file" />
-                <label class="label-input-file" for="file">Выбрать файл</label>
+                <input class="inputfile" type="file" name="avatar" id="file" />                
+                <!-- <label class="label-input-file" for="file">Выбрать файл</label> -->
+                <!-- <div class="col-md-4 offset-md-1"><input class="inputfile" type="file" name="file" id="file" /><label class="label-input-file" for="file">Выбрать файл</label><span>my-lovely-photo.jpg</span> -->
 
                 <!-- <span>my-lovely-photo.jpg</span> -->
                 <div class="form-group">
-                    <label class="label">Страна
+                    <label class="label">
+                        <p><strong>Страна</strong></p>
 						<input class="input" name="country" type="text" placeholder="Введите страну" value="<?=$currentUser->country?>"/>
 					</label>
                 </div>
                 <div class="form-group">
-                    <label class="label">Город
+                    <label class="label">
+                        <p><strong>Город</strong></p>
 						<input class="input" name="city" type="text" placeholder="Введите город" value="<?=$currentUser->city?>" />
 					</label>
                 </div>

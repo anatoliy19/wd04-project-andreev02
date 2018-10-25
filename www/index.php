@@ -68,6 +68,10 @@ switch ( $uri[0] ) {
 		include ROOT . "modules/blog/index.php";
 		break;
 
+	case 'blog/post-new':
+		include ROOT . "modules/blog/post-new.php";
+		break;
+
 //::::::::::::::MAIN /OTHER ::::::::::::::::::::::::		
 	
 	default:

@@ -21,13 +21,13 @@
 	</div>
 	<div class="login-page-form__row">
 		<div class="login-page-form__col">
-			<div class="checkbox">
+			<!-- <div class="checkbox">
 				<label class="checkbox__label">
 					<input class="checkbox__input" type="checkbox" checked="checked" />
 					<span class="checkbox__check-inner"></span>
 					<span class="checkbox__check-inner-label">Запомнить меня</span>
 				</label>
-			</div>
+			</div> -->
 		</div>
 		<div class="login-page-form__col float-right">
 			<a class="login-page__links" href="<?=HOST?>lost-password">Забыл пароль</a>
